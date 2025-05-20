@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 
-module.export ={
+module.exports ={
     content: [
         '.app/**/*.{js,ts,jsx,tsx}',
         './pages/**/*.{js,ts,jsx,tsx}',
@@ -26,7 +26,6 @@ module.export ={
                 iconLightGray: '#8696A0',   // Lighter icon color
                 iconDark: '#000000',        // Darker icon color
                 },        
-
 
         },
     },
