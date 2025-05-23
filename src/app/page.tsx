@@ -23,12 +23,11 @@ const page = () => {
 
       <div className="w-full md:max-w-2/4 flex-col gap-4 flex items-center ">
         {/* //download whatsapp for windows */}
-
-        <div
+<div
           style={{ borderColor: colors.primary }}
-          className="w-full h-auto px-10 py-6 gap-6 flex items-center border-[1.5px] justify-between bg-white rounded-2xl"
+          className="w-full h-auto px-10 py-6 gap-6 flex flex-col md:flex-row md:items-center justify-start border-[1.5px] md:justify-between bg-white rounded-2xl"
         >
-          <img src={'/images/Devices-bro.png'} className="w-[100px] h-auto"/>
+          <img src={'/images/Devices-bro.png'} className="hidden md:flex md:w-[100px] h-auto"/>
           <span className="flex-col">
             <p style={{ fontSize: fontSize.h6 }} className="font-medium">
               Download WhatsApp for Windows
@@ -44,12 +43,11 @@ const page = () => {
               borderColor: colors.primary,
               backgroundColor: colors.secondary,
             }}
-            className="px-6 py-2 rounded-full border-[2px] flex items-center gap-2"
+            className="px-6 py-2 rounded-full border-[2px] w-[150px] h-[50px] flex items-center gap-2"
           >
             <p>Download</p> <LuDownload/>
           </button>
         </div>
-
         {/* steps to login to whatsapp web */}
         <div
           style={{ borderColor: colors.primary }}
@@ -119,7 +117,7 @@ const page = () => {
               className="w-[250px] h-[250px] mb-8"
             />
             <Link
-              href="/"
+              href="/userauth/signin"
               style={{ borderColor: colors.secondary }}
               className="border-b-2 font-medium flex items-center gap-2"
             >

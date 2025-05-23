@@ -5,6 +5,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import {Inter} from "next/font/google";
 import { AppTheme } from "./Contexts/ThemeContext";
+import { ApiCall } from "./Contexts/APIcontext";
 
 
 
@@ -28,11 +29,13 @@ export default function RootLayout({
 }) {
   
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <AppTheme>
+        <ApiCall>
       <body className={`${inter.className}`}>
         {children}
       </body>
+      </ApiCall>
       </AppTheme>
 
     </html>
